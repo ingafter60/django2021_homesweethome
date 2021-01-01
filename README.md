@@ -37,8 +37,26 @@ https://github.com/ingafter60/django2021_homesweethome
 		├── db.sqlite3
 		└── manage.py
 
+### Database - Setting up postgres for the db
 
-
+	# Jalankan postgres server
+	> sudo service postgresql start
+	# Gunakan postgres untuk membuat db
+	> sudo -u postgres psql
+	# Buat database
+	> postgres=# CREATE DATABASE django2021_homesweethome;
+	CREATE DATABASE
+	# Membuat user baru + password
+	> postgres=# CREATE USER user2021 WITH PASSWORD '2021';
+	CREATE ROLE
+	# Grant All Privileges
+	> postgres=# GRANT ALL PRIVILEGES ON DATABASE django2021_homesweethome TO user2021;
+	GRANT
+	# Uji hasilnya
+	postgres=# \l
+	...
+	django2021_homesweethome
+    modified:   README.md	
 
 
 
