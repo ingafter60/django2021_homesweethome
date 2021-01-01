@@ -83,7 +83,34 @@ https://github.com/ingafter60/django2021_homesweethome
         Starting development server at http://127.0.0.1:8000/
         :)
 
+### App - Membuat app baru 'users' dan mencatatkannya pada proyek
 
+        modified:   README.md
+        # Membuat app 'users'
+        > django-admin startapp users
+        # Catatkan users pada settings file
+        .
+        ├── LICENSE
+        ├── Pipfile
+        ├── Pipfile.lock
+        ├── README.md
+        ├── config
+        │   ├── __init__.py
+        │   ├── settings.py
+        │   ├── urls.py
+        │   └── wsgi.py
+        ├── db.sqlite3
+        ├── manage.py
+        └── users
+            ├── __init__.py
+            ├── admin.py
+            ├── apps.py
+            ├── migrations
+            │   └── __init__.py
+            ├── models.py
+            ├── tests.py
+            └── views.py      
+	
 
 
 
