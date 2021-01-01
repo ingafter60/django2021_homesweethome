@@ -61,9 +61,27 @@ https://github.com/ingafter60/django2021_homesweethome
 
 ###	Modified README.md 
 
+### Koneksi - Hubungan database dengan django proyek
 
-
-
+        modified:   README.md
+        # Install psycopg2 postgres driver
+        > pipenv instll psycopg2
+        # Setup db pada settings files
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': 'django2021_homesweethome', 
+                'USER': 'user2021', 
+                'PASSWORD': '2021',
+                'HOST': '127.0.0.1', 
+                'PORT': '5432',
+            }
+        }
+        # Djalankan server untuk mengujinya
+        > python manage.py runserver
+        ...
+        Starting development server at http://127.0.0.1:8000/
+        :)
 
 
 
