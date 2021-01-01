@@ -110,10 +110,35 @@ https://github.com/ingafter60/django2021_homesweethome
             ├── models.py
             ├── tests.py
             └── views.py      
-	
 
+### Auth - Membuat User auth menggunakan Django AbstractUser
 
+        # USERS/models.py
+        from django.contrib.auth.models import AbstractUser
+        from django.db import models
+        class User(AbstractUser):
+           pass
 
+        # USERS/admin.py
+        from django.contrib import admin
+        from . import models
+
+        # Register your models here.
+        admin.site.register(models.User)
+
+        # new
+        AUTH_USER_MODEL = 'users.User'
+
+        > python manage.py makemigrations
+        > python manage.py migrate
+        > python manage.py createsuperuser
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   users/admin.py
+        new file:   users/migrations/0001_initial.py
+        modified:   users/models.py
+        :)
 
 
 
