@@ -140,8 +140,15 @@ https://github.com/ingafter60/django2021_homesweethome
         modified:   users/models.py
         :)
 
+### Kolom - Menambah kolom 'avatar dan gender' pada Users table/model 
 
-
+        modified:   Pipfile
+        modified:   Pipfile.lock
+        modified:   README.md
+        modified:   users/admin.py
+        new file:   users/migrations/0002_user_bio.py
+        new file:   users/migrations/0003_auto_20210102_0232.py
+        modified:   users/models.py
 
 
 

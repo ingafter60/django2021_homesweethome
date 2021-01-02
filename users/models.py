@@ -4,4 +4,9 @@ from django.db import models
 
 
 class User(AbstractUser):
-   pass
+
+	""" Custom User Model """
+
+	avatar = models.ImageField(null=True)
+	gender = models.CharField(max_length=10, null=True)
+	bio = models.TextField(default="")
