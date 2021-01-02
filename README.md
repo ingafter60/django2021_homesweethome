@@ -150,9 +150,10 @@ https://github.com/ingafter60/django2021_homesweethome
         new file:   users/migrations/0003_auto_20210102_0232.py
         modified:   users/models.py
 
+### Pilihan - Menambah beberapa pilihan pada kolom gender 
 
-
-
+        modified:   README.md
+        modified:   users/models.py
 
 
 
